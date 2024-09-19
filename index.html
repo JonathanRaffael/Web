@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PT. HANG TONG MANUFACTORY - Manufacturer of high-quality silicone and rubber products.">
+    <meta name="keywords" content="silicone products, rubber products, manufacturing, PT. HANG TONG MANUFACTORY">
+    <title>Website Profile PT. HANG TONG MANUFACTORY</title>
+
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css"> <!-- Pastikan file CSS memiliki nama yang sama dengan yang di referensikan -->
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        /* Mengatur layout halaman dengan flexbox */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Warna hijau WhatsApp */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Warna hijau WhatsApp gelap */
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: left; /* Ubah text-align menjadi left */
+            padding: 10px;
+            margin-left: 0; /* Menghapus margin otomatis */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff7733;
+        }
+        .hero-section {
+            background: url('https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/459362942_535291069076900_1358980817654556273_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFWp0ALwTFOByeE6avuWEHGt6mc4KxfORS3qZzgrF85FODQ54RBaxk1OAkuzf64FiRG1WODuY3nNzAK_kp2dX8H&_nc_ohc=WlTRu6utYrUQ7kNvgE9omC6&_nc_ht=scontent.fbth5-1.fna&_nc_gid=AJy4MV9afPMBoqHYnBmZjcn&oh=00_AYA0zzibC9cCOak-IwQbp5RmweDyVAiKCbj0KGT-uYvJBA&oe=66EFF3A8') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .cta-button {
+            background: #ff5733;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #ff7733;
+        }
+        .about-section,
+        .products-section,
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .products-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Membuat container responsif */
+            gap: 20px; /* Jarak antar produk */
+        }
+        .product {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px; /* Mengatur lebar maksimum produk */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%; /* Memastikan gambar memenuhi lebar container produk */
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" data-aos="fade-down">
+            PT. HANG TONG MANUFACTORY
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                <li><a href="#about" class="smooth-scroll">About Us</a></li>
+                <li><a href="#products" class="smooth-scroll">Products</a></li>
+                <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="home" class="hero-section" data-aos="fade-up">
+            <div class="hero-content">
+                <h1>Welcome to Our Company</h1>
+                <p>Your success is our business.</p>
+                <a href="#about" class="cta-button smooth-scroll">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" data-aos="fade-left">
+            <h2>About Us</h2>
+            <p>Established in 1972, Hung Kee Rubber Factory is a Hong Kong-based manufacturer, supplier, and exporter of customized silicone and rubber parts. With over 40 years of experience, we operate our factory in ShenZhen, China, spanning 12,500 sqm. Our facilities include a clean production workshop and a state-of-the-art testing laboratory.</p>
+
+            <p>As an ISO9001:2008 certified manufacturer, we produce products meeting FDA, NSF standards for the US, as well as other quality certifications like RoHS, LFGB, EU, and JFSL.</p>
+
+            <p>We are committed to delivering top-quality silicone tubes, seals, gaskets, and o-rings. Our products are used globally in various applications, including kitchenware, electrical appliances, toys, and car accessories.</p>
+
+            <p>Our mission is to build on our legacy of product excellence and forge mutually beneficial partnerships with our customers.</p>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2 data-aos="fade-right">Our Products</h2>
+            <div class="products-container">
+                <div class="product" data-aos="zoom-in">
+                    <img src="https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/460666238_540149088591098_8678784362890037331_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE6sv1t3c0A1QWkNW8ftmIT91WI725qN6D3VYjvbmo3oGRNet0OWwj3OTtUCy4_XOt3H5FzV186CyhAPhI785kq&_nc_ohc=sOOfuZM2xMAQ7kNvgG7xVqB&_nc_ht=scontent.fbth5-1.fna&_nc_gid=AjgalbH60vFtHbZe71tk2n9&oh=00_AYD3ZXMFik99ggzBer1AJIh7Cg8LdeFOChZa37BeC63eyg&oe=66F18B48" alt="Button">
+                    <h3>Button</h3>
+                    <p>Description of Product 1.</p>
+                </div>
+                <div class="product" data-aos="zoom-in">
+                    <img src="https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/460426131_540159211923419_3754991259499855777_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGOFhdV0gNtubE8Qzk6TirTe46BkAxFQwF7joGQDEVDAev0ZWiRZ5tmwY2kiOu9RaFppRCuh8FWUK_Rwe6vyfbf&_nc_ohc=uS3KYSxA_8IQ7kNvgGGpyKR&_nc_ht=scontent.fbth5-1.fna&_nc_gid=AQEP-VYdcmHnLvwU1mZPETF&oh=00_AYD9dkw2o0GSOcg0T4t_7LrtjrbosSBOv24FAVYHdSKP4w&oe=66F15F30" alt="Seal Cover">
+                    <h3>Seal Cover</h3>
+                    <p>Description of Product 2.</p>
+                </div>
+                <div class="product" data-aos="zoom-in">
+                    <img src="https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/460445685_540170505255623_3760088902472431011_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF2MXB5siN39XDIWFcJb0-B36BcMi-8ExXfoFwyL7wTFYwF58eL_JootWbn5Mc1eWi2Dzhzf7SP6wpxQNbc53RL&_nc_ohc=ZnVx8taWhbkQ7kNvgH26MeK&_nc_ht=scontent.fbth5-1.fna&_nc_gid=A1r20cvTBt7JevQvdmQReIK&oh=00_AYCwlS2EX64h-T2GxOh6bHqt6O2--6L-Bodn4bWZEtd_qQ&oe=66F1968A">
+                    <h3>Silicone Tubing</h3>
+                    <p>Description of Product 3.</p>
+                </div>
+                <div class="product" data-aos="zoom-in">
+                    <img src="https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/460426160_540161871923153_2139167539778391548_n.jpg?stp=dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE7xQDLxKI3TN_jf4ztLJMyT8s679UetuhPyzrv1R626Fo8hgZLroUMRXDuQFBD688Rw1RPVEUonwGneI2yTibB&_nc_ohc=Tecgb-DMtLoQ7kNvgGFPiE-&_nc_ht=scontent.fbth5-1.fna&_nc_gid=Ag36_UhVtSb5yvrIZd2fOFW&oh=00_AYDig3b5yRjR_4prGtfPsToKNMkanvh2h8rkUIf0gDvBtw&oe=66F18797" alt="Upper Sealing">
+                    <h3>Upper Sealing</h3>
+                    <p>Description of Product 4.</p>
+                </div>
+                <div class="product" data-aos="zoom-in">
+                    <img src="https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/460226970_540161868589820_6857164756635520741_n.jpg?stp=dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHMe2rMy5xG4Gppg36Nu91cM3x6FuQJAKUzfHoW5AkApZGaRhKCd54gx1UOfez6uy4dTGPBFpNa9QXmOB_1KaAl&_nc_ohc=mWRQ_bRWT1UQ7kNvgHELvhe&_nc_ht=scontent.fbth5-1.fna&_nc_gid=Ag36_UhVtSb5yvrIZd2fOFW&oh=00_AYB6N3K8FxnMgJcwgYa7rYH9KVu391ZY4bw6MQ_8mCyrxQ&oe=66F17E57" alt="O-Ring">
+                    <h3>O-Ring</h3>
+                    <p>Description of Product 5.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <!-- Link ke WhatsApp -->
+            <a href="https://wa.me/6287766386045?text=Hello%20I%20need%20help" class="whatsapp-button" target="_blank">Send Message on WhatsApp</a>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2024 PT. HANG TONG MANUFACTORY. All rights reserved.</p>
+    </footer>
+
+    <!-- Script AOS untuk animasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 1200, // durasi animasi 1.2 detik
+            once: true // animasi hanya diputar sekali
+        });
+
+        // Smooth scroll untuk anchor links
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
